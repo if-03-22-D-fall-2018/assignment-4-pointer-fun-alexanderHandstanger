@@ -12,10 +12,15 @@
  */
 
 
-#include <studio.h>
+#include <stdio.h>
 #include <float.h>
 #include <string.h>
 
 int main(int argc, char const *argv[]) {
-  
+  int int_value;
+  int int_pointer;
+
+  int_value = 99;
+  int_pointer = 83;
+  return 0;
 }
