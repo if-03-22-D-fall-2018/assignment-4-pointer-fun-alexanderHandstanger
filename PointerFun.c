@@ -17,11 +17,14 @@
 #include <string.h>
 
 void print_integers(int int_value, int* int_pointer){
-
+  printf("Got an integer value %d and an adress to an integer with value %d\n", int_value, *int_pointer);
 }
+
+
+
 int main(int argc, char const *argv[]) {
   int int_value;
-  int int_pointer;
+  int* int_pointer;
 
   int_value = 99;
   int_pointer = &int_value;
@@ -30,6 +33,8 @@ int main(int argc, char const *argv[]) {
   */
 
   printf("%d\n", int_value);
-  printf("%ls\n", &int_pointer);
+  printf("%d\n", *int_pointer);
+
+  print_integers(int_value, int_pointer);
   return 0;
 }
