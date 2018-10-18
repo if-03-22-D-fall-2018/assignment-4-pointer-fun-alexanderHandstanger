@@ -16,11 +16,20 @@
 #include <float.h>
 #include <string.h>
 
+void print_integers(int int_value, int* int_pointer){
+
+}
 int main(int argc, char const *argv[]) {
   int int_value;
   int int_pointer;
 
   int_value = 99;
-  int_pointer = 83;
+  int_pointer = &int_value;
+  /*
+  !!
+  */
+
+  printf("%d\n", int_value);
+  printf("%ls\n", &int_pointer);
   return 0;
 }
