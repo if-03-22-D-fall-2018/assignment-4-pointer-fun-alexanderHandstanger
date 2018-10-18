@@ -19,7 +19,10 @@
 void print_integers(int int_value, int* int_pointer){
   printf("Got an integer value %d and an adress to an integer with value %d\n", int_value, *int_pointer);
 }
-
+void change_integers(int* int_value, int* int_pointer){
+  *int_value = 20;
+  int_pointer = &int_value;
+}
 
 
 int main(int argc, char const *argv[]) {
@@ -36,5 +39,7 @@ int main(int argc, char const *argv[]) {
   printf("%d\n", *int_pointer);
 
   print_integers(int_value, int_pointer);
+  change_integers(&int_value, int_pointer);
+  print_integers(int_value,int_pointer);
   return 0;
 }
